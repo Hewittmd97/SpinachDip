@@ -18,7 +18,7 @@ public class Deck {
             cards[i] = new Card();
         }
         int cardCount = 0;
-        for(int i = 0; i < 5; i++)
+        for(int i = 0; i < 5; i++)      //this is to cycle through the suits
         {
             for(int j = 2; j <= 14; j++)
             {
@@ -76,7 +76,7 @@ public class Deck {
             {
                 randomCard = (int) (Math.random() * 52);
             }
-            visited[i] = true;
+            visited[randomCard] = true;
             shuffledDeck[i] = cards[randomCard];
         }
         cards = shuffledDeck;
